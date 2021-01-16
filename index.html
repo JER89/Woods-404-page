@@ -9,9 +9,8 @@
 
 <body>
 
-    <img src="./assets/becode.png" class="becode">
-
-    <section>
+    <section id="container">
+        
         <div class="cont">
             <h1>404</h1>
             <h3>Sorry, Page not found !</h3>
@@ -20,7 +19,21 @@
             <a href="#">Back To Home</a>
 
         </div>
+    
     </section>
+
+    <script type="text/javascript">
+
+    var container = document.getElementById('container');
+    window.onmousemove = function(e){
+        var x = e.clientX,
+            y = e.clientY;
+        container.style.backgroundPositionX = x + 'px';
+        container.style.backgroundPositionY = y + 'px';
+    }
+    </script>
+
 </body>
+
 
 </html>
